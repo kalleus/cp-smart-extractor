@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # 🚀 Smart Web-to-JSON MCP Server
 
 A production-grade Model Context Protocol (MCP) server that turns any URL into structured JSON. Optimized for AI Agents.
