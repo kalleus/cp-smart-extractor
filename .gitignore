@@ -1,25 +1,22 @@
-# Dependencies
+# Standard Node
 node_modules/
 dist/
-.npm
+lib/
+npm-debug.log*
 
-# Environment Variables (IMPORTANT: Never upload your actual .env)
-.env
-*.local
-
-# Playwright / Browsers
+# Playwright Specifics (Crucial to prevent 100MB+ uploads)
 test-results/
 playwright-report/
-blob-report/
 playwright/.cache/
 ms-playwright/
+.auth/
 
-# Logs & Debug
-npm-debug.log*
-yarn-error.log*
-.logs/
-*.log
+# Environment & Secrets
+.env
+.env.local
+STRIPE_SECRET_KEY
+API_KEY
 
-# OS Metadata
+# Docker & OS
 .DS_Store
-Thumbs.db
+.dockerignore
