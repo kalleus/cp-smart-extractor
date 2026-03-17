@@ -1,0 +1,42 @@
+{
+  "name": "mcp-web-extractor",
+  "version": "1.0.0",
+  "description": "Commercial-grade MCP Server: Structured Web Extraction via Playwright + LLM",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-web-extractor": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "clean": "rm -rf dist",
+    "postinstall": "playwright install chromium --with-deps"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "web-scraping",
+    "structured-extraction",
+    "playwright",
+    "llm"
+  ],
+  "author": "Your Name <you@your-domain.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "playwright": "^1.49.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
